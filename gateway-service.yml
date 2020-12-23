@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+    
+zuul:
+  routes:
+    flashcard:
+      url: http://localhost:8089/flashcard
+    quiz:
+      url: http://localhost:8090/quiz
